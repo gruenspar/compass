@@ -47,7 +47,7 @@ module Compass::Core::SassExtensions::Functions::Urls
         base.declare :font_url,       [:path, :only_path, :cache_buster]
       end
     end
-    def font_url(path, only_path = bool(false), cache_buster = bool(true))
+    def font_url(path, only_path = bool(false), cache_buster = bool(false))
       path = path.value # get to the string value of the literal.
 
       # Short curcuit if they have provided an absolute url.
